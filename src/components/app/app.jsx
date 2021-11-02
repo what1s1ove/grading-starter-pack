@@ -1,23 +1,32 @@
-import logo from 'assets/img/logo.svg';
-import styles from './styles.module.scss';
+import { ThemeProvider } from 'styled-components';
+import {
+  Switch,
+  Route,
+  BrowserRouter as Router,
+} from 'components/common/common';
+import DetailedQuest from 'components/detailed-quest/detailed-quest';
+import Contacts from 'components/contacts/contacts';
+import Home from 'components/home/home';
+import { appTheme } from './common';
+import * as S from './app.styled';
 
 const App = () => (
-  <div className={styles.wrapper}>
-    <header className={styles.header}>
-      <img src={logo} className={styles.logo} alt="logo" />
-      <p>
-        Edit <code>src/App.js</code> and save to reload.
-      </p>
-      <a
-        className={styles.link}
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
-    </header>
-  </div>
+  <ThemeProvider theme={appTheme}>
+    <S.GlobalStyle />
+    <Router>
+      <Switch>
+        <Route exact path="/quest">
+          <DetailedQuest />
+        </Route>
+        <Route exact path="/contacts">
+          <Contacts />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </Router>
+  </ThemeProvider>
 );
 
 export default App;
