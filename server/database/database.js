@@ -1,11 +1,11 @@
-const { generateOffers } = require('./offers/offers');
+const { generateQuests } = require('./quests/quests');
 
 const EntityCount = {
-  OFFERS: 10,
+  QUESTS: 10,
 };
 
 const initDatabase = () => ({
-  offers: generateOffers(EntityCount.OFFERS),
+  quests: generateQuests(EntityCount.QUESTS),
 });
 
 module.exports = {

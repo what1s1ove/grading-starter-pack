@@ -39,16 +39,26 @@
 
 ### Список роутов:
 
-- **GET** http://localhost:3001/offers — получить список (массив) всех объявлений.
-
- Пример возвращаемого *одного* значения:
+- **GET** http://localhost:3001/quests — получить список (массив) всех квестов.
 
  ```json
+ [
   {
-    "id": "63681e4e-33dd-4075-a918-f343df4d0316",
-    "title": "National Directives Assistant"
+    "id": 1,
+    "title": "Ритуал",
+    "description": "В комнате с приглушённым светом несколько человек, незнакомых друг с другом, приходят в себя. На стене висит пугающий таймер и запущен отстёт. Он уже рядом. Руки и ноги связаным, но одному из вас получилось освободиться. Сможете ли вы разобраться в стрессовой ситуации, помочь другим, разобраться что произошло и выбраться из комнаты?",
+    "preview": "img/preview-1.jpg",
+    "cover": "img/cover-1.jpg",
+    "type": "easy",
+    "level": "adventures",
+    "minPeopleCount": 1,
+    "maxPeopleCount": 6,
+    "duration": 120
   }
+ ]
  ```
+
+- **GET** http://localhost:3001/quests/1 — получить квест по id.
 
 - **POST** http://localhost:3001/orders — отправить заказ.
 
@@ -56,9 +66,9 @@
 
  ```json
   {
-    "firstName": "Jon",
-    "lastName": "Bros",
-    "peopleCount": 5,
-    "date": "2021-10-30T11:42:43.938Z"
+    "name": "string",
+    "peopleCount": 1,
+    "phone": "7000000000",
+    "isLegal": true
   }
  ```

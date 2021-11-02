@@ -1,7 +1,7 @@
 const array = require('./array/array');
-const string = require('./string/string');
+const number = require('./number/number');
 
 module.exports = {
   ...array,
-  ...string,
+  ...number,
 };

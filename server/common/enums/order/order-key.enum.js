@@ -1,8 +1,8 @@
 const OrderKey = {
-  FIRST_NAME: 'firstName',
-  LAST_NAME: 'lastName',
+  NAME: 'name',
+  PHONE: 'phone',
   PEOPLE_COUNT: 'peopleCount',
-  DATE: 'date',
+  IS_LEGAL: 'isLegal',
 };
 
 module.exports = {
