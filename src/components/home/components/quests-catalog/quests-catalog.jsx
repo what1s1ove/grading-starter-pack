@@ -59,7 +59,7 @@ const QuestsCatalog = () => (
         <S.QuestItemLink to="/quest">
           <S.Quest>
             <S.QuestImage
-              src="img/preview-1.jpg"
+              src="img/preview-sklep.jpg"
               width="344"
               height="232"
               alt="квест Склеп"
@@ -87,7 +87,7 @@ const QuestsCatalog = () => (
         <S.QuestItemLink to="/quest">
           <S.Quest>
             <S.QuestImage
-              src="img/preview-2.jpg"
+              src="img/preview-maniac.jpg"
               width="344"
               height="232"
               alt="квест Маньяк"
@@ -115,7 +115,7 @@ const QuestsCatalog = () => (
         <S.QuestItemLink to="/quest">
           <S.Quest>
             <S.QuestImage
-              src="img/preview-3.jpg"
+              src="img/preview-ritual.jpg"
               width="344"
               height="232"
               alt="квест Ритуал"
@@ -143,7 +143,7 @@ const QuestsCatalog = () => (
         <S.QuestItemLink to="/quest">
           <S.Quest>
             <S.QuestImage
-              src="img/preview-4.jpg"
+              src="img/preview-old-ceil.jpg"
               width="344"
               height="232"
               alt="квест История призраков"
@@ -171,7 +171,7 @@ const QuestsCatalog = () => (
         <S.QuestItemLink to="/quest">
           <S.Quest>
             <S.QuestImage
-              src="img/preview-5.jpg"
+              src="img/preview-final-frontier.jpg"
               width="344"
               height="232"
               alt="квест Тайны старого особняка"
@@ -199,7 +199,7 @@ const QuestsCatalog = () => (
         <S.QuestItemLink to="/quest">
           <S.Quest>
             <S.QuestImage
-              src="img/preview-6.jpg"
+              src="img/preview-house-in-the-woods.jpg"
               width="344"
               height="232"
               alt="квест Хижина в лесу"

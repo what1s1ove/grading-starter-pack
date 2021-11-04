@@ -1,11 +1,7 @@
-const { generateQuests } = require('./quests/quests');
-
-const EntityCount = {
-  QUESTS: 10,
-};
+const quests = require('./quests/quests.json');
 
 const initDatabase = () => ({
-  quests: generateQuests(EntityCount.QUESTS),
+  quests,
 });
 
 module.exports = {
